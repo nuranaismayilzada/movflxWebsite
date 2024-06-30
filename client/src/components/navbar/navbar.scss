@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbarSection{
+    background-color: #171D22;
+    position: sticky;
+    top: 0px;
+    // transition: top 0.5s;
+    transform: translateZ(20%);
+    transition-duration: 6s;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+.navbar{
+   padding: 20px 0px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   .home-side{
+    nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            gap: 20px;
+            li{
+                list-style: none;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                color: #f0f0f0;                ;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            li:hover{
+                color:#E4D804;
+                transition: 1s;
+            }
+        }
+    }
+   }
+   .left-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+    gap: 30px;
+    .selectLanguage{
+        border:none;
+        height: 17px;
+    }
+    .icon-side{
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        align-items:center;
+    }
+    .searchIcon,.basketIcon,.wishlistIcon,.userIcon,.globalIcon,.burgerIcon{
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+    }
+    .burgerIcon{
+        font-size: 24px;
+        display: none;
+    }
+    .language-side{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        line-height: 1;
+    }
+    .signinBtn{
+        padding: 5px 14px;
+        color: #fff;
+        font-size: 14px;
+        border: 2px solid #e4d804;
+        border-radius: 50px;
+        background-color:transparent;
+        font-weight: 700;
+        cursor: pointer;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+    .signinBtn:hover{
+        background-color: #e4d804;
+        color:black;
+        cursor: pointer;
+    }
+    .userIcon{
+        font-size: 30px;
+    }
+    .globalIcon{
+        font-size: 22px;
+        color:#E4D804;
+    }
+    .wishlistIcon:hover{
+        color:red;
+    }
+}
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+        margin: 0px auto;
+    }
+    .count{
+        display: none;
+    }
+    .home-side{
+        display: none;
+    }
+    .basketIcon{
+        display: none;
+    }
+    .wishlistIcon{
+        display: none;
+    }
+    .signinBtn{
+        display: none;
+    }
+    .userIcon{
+        display: none;
+    }
+    .burgerIcon{
+        display: block !important;
+        font-size: 30px !important;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .count{
+        display: none;
+    }
+    .burgerIcon{
+        display: block !important;
+        font-size: 35px !important;
+    }
+    .searchIcon{
+        display: none;
+    }
+    .language-side{
+        display: none !important;
+    }
+    .container{
+        max-width: 540px;
+        margin: 0px auto;
+    }
+  }
+.count{
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: -20px;
+    background-color:#E4D804;
+    border-radius: 50%;
+    color:#171D22;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.icon-side{
+    position: relative;
+}

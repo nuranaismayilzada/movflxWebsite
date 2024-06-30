@@ -1,0 +1,48 @@
+body {
+    /* fallback for old browsers */
+    background: #d7d400;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(183, 186, 9), rgb(172, 154, 17));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(255, 193, 6), rgb(202, 200, 171))
+  }
+  
+  .bg-indigo {
+    background-color: #eab917bb;
+  }
+  
+  @media (min-width: 1025px) {
+    .h-custom {
+      height: 100vh !important;
+    }
+  }
+  
+  @media (min-width: 759px) {
+    .card-registration-2 .bg-indigo {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+  
+  @media (max-width: 758px) {
+    .card-registration-2 .bg-indigo {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+  
+  @media (min-width: 759px) {
+    .card-registration-2 .bg-white {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+  
+  @media (max-width: 758px) {
+    .card-registration-2 .bg-white {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  }

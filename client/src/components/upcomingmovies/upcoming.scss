@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.upcomingSection{
+    // background-image: url("https://movflxx.netlify.app/img/bg/ucm_bg_shape.png");
+    // background-repeat: no-repeat;
+    // width: 100vw;
+    // background-size:cover;
+    background-color:#141219;
+}
+// .upcomingSection::before{
+//     content: "";
+//     position:absolute;
+//     width: 100vw;
+//     background-color:#000408d3; 
+//     height: 100vh;
+//     pointer-events: none;
+// }
+
+.upcoming{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+.upcoming .up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.upcoming .up p{
+    display: block;
+    line-height: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #e4d804;
+    text-align: left !important;
+    padding-top: 100px;
+}
+.upcoming .up h1{
+    margin-bottom: 0;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 700;
+}
+.upcoming .middleSide{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.upcoming .middleSide button{
+    color: #fff;
+    border-radius: 50px;
+    background: #20212b;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e3dfdf;
+    border: 2px solid #2d303d;
+    padding: 11px 27px;
+    margin-bottom: 0;
+    transition: none !important;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.upcoming .middleSide button:hover{
+    background-color: #ffffff;
+    color: #f1c40f;
+    transform: scale(1.1);
+    border:none;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+
+}
+.films{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+    .cardd{
+        border:1px solid none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+        img{
+            border:none;
+            border-radius:10px;
+        }  
+        .textsSide{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }  
+    }
+    .upText{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+        .detailBtnn {
+            width: 55px;
+            border-radius: 5px;
+            border-color: transparent;
+            color: white;
+            background-color: #f1c40f;
+            cursor: pointer;
+            height: 30px;
+            }
+
+        h5{
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            color:white;
+            cursor: pointer;
+        }
+        h5:hover{
+            color: #e4d804;
+            transition: 0.5s;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 50px;
+            color: #e4d804;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .downText{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        gap: 10px;
+        button{
+            border: 2px solid #fff;
+            padding: 5px 10px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #e4d804;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            background-color:transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            .addBtn{
+                font-size: 16px;
+            }
+        }
+        button:hover{
+            background-color:white;
+            color:red;
+        }
+        .iconsSidee{
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+            justify-content: center;
+            gap: 10px;
+            .like{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                .likeIcon{
+                    color: #e4d804;
+                }
+                p{
+                    color: #bcbcbc;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+            .timee{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                p{
+                    color: #bcbcbc;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
+                }
+                .timeIcon{
+                    color: #e4d804;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .upcoming{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    .films{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+        
+        .card .textsSide .upText{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .middleSide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .middleSide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        gap: 0px;
+    }
+}

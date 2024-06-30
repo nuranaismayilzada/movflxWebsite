@@ -1,0 +1,645 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.footerMenuSection{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url("../../assets/images/footer.jpg");
+}
+.footerMenuSection .footerMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .line{
+        border: 3px solid rgb(2, 7, 25);
+        margin-top: 70px;
+        width: 100%;
+    }
+}
+.footerMenuSection .footerMenu .upSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerMenuSection .footerMenu .upSide .rightSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    .findForm{
+        min-width: 240px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        input{
+            width: 100%;
+            border: none;
+            background: #12151e;
+            color: #fff;
+            padding: 14px 20px;
+            font-size: 14px;
+            border-radius: 30px;
+            padding-right: 60px;
+            box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+        }
+        .searchIcon{
+            position: absolute;
+            right:30px;
+            top: 15px;
+            color: yellow;
+            border-left: 1px solid grey;
+        }
+    }
+}
+.footerMenuSection .footerMenu .upSide .rightSide nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    li{
+        list-style: none;
+        display: block;
+        text-transform: uppercase;
+        color: #c3c3c3;
+        font-weight: 700;
+        padding: 10px 10px;
+        line-height: 1;
+        cursor: pointer;
+    }
+    li:hover{
+        color: yellow;
+        transition: 1s;
+    }
+}
+
+.footerMenuSection .footerMenu .bottomSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    .leftSide{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 600px;
+        .iconSide{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            .icons{
+                border-radius: 50%;
+                width: 30px;
+                padding: 5px;
+                height: 30px;
+                color:white;
+                cursor: pointer;
+                background-color: rgba(128, 128, 128, 0.315);
+            }
+            .icons:hover{
+                color: yellow;
+            }
+
+        }
+    }
+    .leftSide nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        li{
+            list-style: none;
+            color: #bcbcbc;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        li:hover{
+            color: yellow;
+            transition: 1s;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1180px) {
+    .footerMenuSection .footerMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .line{
+            border: 3px solid rgb(2, 7, 25);
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    .footerMenuSection .footerMenu .upSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        .findForm{
+            min-width: 200px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            input{
+                width: 100%;
+                border: none;
+                background: #12151e;
+                color: #fff;
+                padding: 10px 15px;
+                font-size: 14px;
+                border-radius: 30px;
+                padding-right: 40px;
+                box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+            }
+            .searchIcon{
+                position: absolute;
+                right:30px;
+                top: 15px;
+                color: yellow;
+                border-left: 1px solid grey;
+            }
+        }
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        li{
+            list-style: none;
+            display: block;
+            text-transform: uppercase;
+            color: #c3c3c3;
+            font-weight: 700;
+            padding: 10px 10px;
+            line-height: 1;
+            cursor: pointer;
+        }
+        li:hover{
+            color: yellow;
+            transition: 1s;
+        }
+    }
+    
+    .footerMenuSection .footerMenu .bottomSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        .leftSide{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 400px;
+            .iconSide{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                .icons{
+                    border-radius: 50%;
+                    width: 30px;
+                    padding: 5px;
+                    height: 30px;
+                    color:white;
+                    cursor: pointer;
+                    background-color: rgba(128, 128, 128, 0.315);
+                }
+                .icons:hover{
+                    color: yellow;
+                }
+    
+            }
+        }
+        .leftSide nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            li{
+                list-style: none;
+                color: #bcbcbc;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            li:hover{
+                color: yellow;
+                transition: 1s;
+            }
+        }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .footerMenuSection .footerMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .line{
+            border: 3px solid rgb(2, 7, 25);
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    .footerMenuSection .footerMenu .upSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-evenly;
+        .findForm{
+            min-width: 200px;
+            // position: relative;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            input{
+                width: 100%;
+                border: none;
+                background: #12151e;
+                color: #fff;
+                padding: 10px 15px;
+                font-size: 14px;
+                border-radius: 30px;
+                padding-right: 40px;
+                box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+            }
+            .searchIcon{
+                position: absolute;
+                right:30px;
+                top: 15px;
+                color: yellow;
+                border-left: 1px solid grey;
+            }
+        }
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        li{
+            list-style: none;
+            display: block;
+            text-transform: uppercase;
+            color: #c3c3c3;
+            font-weight: 700;
+            padding: 10px 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        li:hover{
+            color: yellow;
+            transition: 1s;
+        }
+    }
+    
+    .footerMenuSection .footerMenu .bottomSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        .leftSide{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 300px;
+            .iconSide{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                .icons{
+                    border-radius: 50%;
+                    width: 30px;
+                    padding: 5px;
+                    height: 30px;
+                    color:white;
+                    cursor: pointer;
+                    background-color: rgba(128, 128, 128, 0.315);
+                }
+                .icons:hover{
+                    color: yellow;
+                }
+    
+            }
+        }
+        .leftSide nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            li{
+                list-style: none;
+                color: #bcbcbc;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            li:hover{
+                color: yellow;
+                transition: 1s;
+            }
+        }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .footerMenuSection .footerMenu{
+        display: flex;
+        flex-direction: column;
+        .line{
+            border: 3px solid rgb(2, 7, 25);
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    .footerMenuSection .footerMenu .upSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        .findForm{
+            min-width: 400px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            input{
+                width: 100%;
+                border: none;
+                background: #12151e;
+                color: #fff;
+                padding: 10px 15px;
+                font-size: 14px;
+                border-radius: 30px;
+                padding-right: 40px;
+                box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+            }
+            .searchIcon{
+                position: absolute;
+                right:500px;
+                top: 15px;
+                color: yellow;
+                border-left: 1px solid grey;
+            }
+        }
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        li{
+            list-style: none;
+            display: block;
+            text-transform: uppercase;
+            color: #c3c3c3;
+            font-weight: 700;
+            padding: 10px 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        li:hover{
+            color: yellow;
+            transition: 1s;
+        }
+    }
+    
+    .footerMenuSection .footerMenu .bottomSide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        .leftSide{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            .iconSide{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                .icons{
+                    border-radius: 50%;
+                    width: 30px;
+                    padding: 5px;
+                    height: 30px;
+                    color:white;
+                    cursor: pointer;
+                    background-color: rgba(128, 128, 128, 0.315);
+                }
+                .icons:hover{
+                    color: yellow;
+                }
+            }
+        }
+        .leftSide nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            li{
+                list-style: none;
+                color: #bcbcbc;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            li:hover{
+                color: yellow;
+                transition: 1s;
+            }
+        }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .footerMenuSection .footerMenu{
+        display: flex;
+        flex-direction: column;
+        .line{
+            border: 3px solid rgb(2, 7, 25);
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    .footerMenuSection .footerMenu .upSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        .findForm{
+            min-width: 200px;
+            margin-left: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            input{
+                width: 100%;
+                border: none;
+                background: #12151e;
+                color: #fff;
+                padding: 10px 15px;
+                font-size: 14px;
+                border-radius: 30px;
+                padding-right: 40px;
+                box-shadow: inset 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+            }
+            .searchIcon{
+                position: absolute;
+                right:500px;
+                top: 15px;
+                color: yellow;
+                border-left: 1px solid grey;
+            }
+        }
+    }
+    .footerMenuSection .footerMenu .upSide .rightSide nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        flex-wrap: wrap;
+        li{
+            list-style: none;
+            display: block;
+            text-transform: uppercase;
+            color: #c3c3c3;
+            font-weight: 700;
+            padding: 10px 10px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        li:hover{
+            color: yellow;
+            transition: 1s;
+        }
+    }
+    
+    .footerMenuSection .footerMenu .bottomSide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        .leftSide{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            .iconSide{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                .icons{
+                    border-radius: 50%;
+                    width: 30px;
+                    padding: 5px;
+                    height: 30px;
+                    color:white;
+                    cursor: pointer;
+                    background-color: rgba(128, 128, 128, 0.315);
+                }
+                .icons:hover{
+                    color: yellow;
+                }
+            }
+        }
+        .leftSide nav ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            li{
+                list-style: none;
+                color: #bcbcbc;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            li:hover{
+                color: yellow;
+                transition: 1s;
+            }
+        }
+    }
+    
+}

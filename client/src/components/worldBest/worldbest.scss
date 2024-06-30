@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.worldBestSection{
+    background-color: #181D23;
+}
+
+.worldBestSection .worldSection .upSidde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0px 70px;
+    gap: 20px;
+    h5{
+        line-height: 1;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+        color: #e4d804;
+        font-family: 'Poppins', sans-serif;
+        text-align: center !important;
+    }
+    h1{
+        font-size: 36px;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        margin-top: 0px;
+        font-style: normal;
+        text-align: center !important;
+        font-weight: 700;
+    }
+}
+
+.films{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 101px;
+    padding-top: 40px;
+    .card{
+        border:1px solid none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+        img{
+            border:none;
+            border-radius:10px;
+        }  
+        .textsSide{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }  
+    }
+    .upText{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 15px;
+        .detailBtn {
+            width: 50px;
+            border-radius: 5px;
+            border-color: transparent;
+            color: white;
+            background-color: #f1c40f;
+            cursor: pointer;
+            height: 20px;
+            }
+        h5{
+            font-size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            font-family: 'Poppins', sans-serif;
+            color:white;
+            cursor: pointer;
+        }
+        h5:hover{
+            color: #e4d804;
+            transition: 0.5s;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            margin-left: 50px;
+            color: #e4d804;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    .downText{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        gap: 10px;
+        button{
+            border: 2px solid #fff;
+            padding: 5px 10px;
+            line-height: 1;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #e4d804;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            background-color:transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            .addBtn{
+                font-size: 16px;
+            }
+        }
+        button:hover{
+            background-color:white;
+            color:red;
+        }
+        .iconsSide{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            .like{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                .likeIcon{
+                    color: #e4d804;
+                }
+                p{
+                    color: #bcbcbc;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+            .time{
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                p{
+                    color: #bcbcbc;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
+                }
+                .timeIcon{
+                    color: #e4d804;
+
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .upcoming{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    .films{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+        
+        .card .textsSide .upText{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .middleSide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .middleSide{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        gap: 0px;
+    }
+}

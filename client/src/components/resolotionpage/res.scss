@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.resPage{
+    background-image: url("../../assets/images/services.jpg");
+    background-repeat: no-repeat;
+    // height: 100vh;
+    // background-size:100% 100%;
+    background-size:cover;
+}
+.res{
+    display: flex;
+    flex-direction:row ;
+    align-items:center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+.leftSide{
+    display: flex;
+    padding-top:120px ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .downloadBtn{
+        background: #e4d804;
+        padding: 73px 39px;
+        cursor: pointer;
+        border-radius: 6px;
+        width: 110px;
+        gap: 80px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        letter-spacing: 6px;
+        align-self: flex-end;
+        align-items:center;
+        p{
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        color: #14141d;      
+        transform: rotate(90deg);
+        }
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self:flex-end;
+    .lineSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;        
+        gap: 15px;
+        .line{
+            background: #e4d804;
+            width: 40px;
+            height: 3px;
+            cursor: pointer;
+        }
+        h5{
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #e4e2e2;
+            line-height: 1;
+            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    h1{
+        font-size: 36px;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        margin-top: 0px;
+        font-style: normal;
+        font-weight: 700;
+        // width: 410px;
+        // height: 87px;
+    }
+    .bigP{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #bcbcbc;
+        // height: 78px;
+    }
+    .tvSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        .tvBorder{
+            width: 95px;
+            height: 95px;
+            line-height: 93px;
+            text-align: center;
+            border: 1px dashed #e4d804;
+            border-radius: 50%;
+            // position: relative;
+            font-size: 38px;
+            color: #fff;
+            // z-index: 1;
+            padding-top: 5px;
+            cursor: pointer;
+        }
+        .tv{
+            font-size: 39px;
+            color: white;
+        }
+        .tvBorder:hover{
+              background-color: #e4d804;
+              transition: 1s;
+              padding: 5px;
+        }
+        .tvText{
+            h3{
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-family: 'Poppins', sans-serif;
+                color: #fff;
+                margin-top: 0px;
+                font-style: normal;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 26px;
+                color: #bcbcbc;
+                // width: 290px;
+            }
+        }
+        
+    }
+    .cameraSide{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        .cameraBorder{
+            width: 95px;
+            height: 95px;
+            line-height: 93px;
+            text-align: center;
+            border: 1px dashed #e4d804;
+            border-radius: 50%;
+            // position: relative;
+            font-size: 38px;
+            color: #fff;
+            // z-index: 1;
+            padding-top: 5px;
+            cursor: pointer;
+            .cam{
+                font-size: 39px;
+                color: white;
+            }
+        }
+        .cameraBorder:hover{
+            background-color: #e4d804;
+            transition: 1s;
+            padding: 5px;
+      }
+        .cameraText{
+            h3{
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-family: 'Poppins', sans-serif;
+                color: #fff;
+                font-style: normal;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 26px;
+                color: #bcbcbc;
+                // width: 290px;
+                height: 52px;
+            }
+        }
+    }
+    .linedashed{
+        border-bottom: 1px dashed #38373c;
+        height: 3px;
+    }
+    .tvandwatch{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    // .downloadBtn{
+    //     position: absolute;
+    //     left: 400px;
+    //     z-index: 444;
+    // }
+    // .hdphoto{
+    //     z-index: 22;
+    // }
+}
+
+@media only screen and (max-width: 992px) {
+    // .downloadBtn{
+    //     position: absolute;
+    //     left: 620px;
+    //     z-index: 3;
+    // }
+    .res{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSide{
+       padding-left: 100px;
+
+    }
+    .tvandwatch{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .downloadBtn{
+       display: none !important;
+    }
+    .res{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSide{
+       padding-left: 50px;
+    }
+    .hdphoto{
+        max-width:300px;
+        // z-index: 8282;
+    }
+    .tvText{
+        display: flex;
+        flex-direction: column;
+    }
+   .rightSide h1{
+    font-size: 18px;
+   }
+   .linedashed{
+    display: none;
+   }
+   .tvandwatch{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    gap: 50px;
+    .tvSide{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cameraSide{
+        display: flex;
+        flex-direction: column;
+    }
+   }
+}

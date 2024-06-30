@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.regSection{
+    background-image: url("../../assets/images/log.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+a{
+    color: white;
+    margin-left: 200px;
+    text-decoration: none;
+    span{
+        text-decoration: underline;
+        color:#ffda0b;
+    }
+}
+.register{
+    background-color: rgba(207, 130, 14, 0.482);
+    max-width: 600px;
+    height: 100vh;
+    h1{
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        cursor: pointer;
+    }
+    h1:hover{
+        color: rgba(195, 217, 27, 0.879);
+        transition: 1s;
+    }
+    form{
+        margin: 50px 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input{
+            width: 300px;
+            border-radius: 10px;
+            border-color: transparent;
+            height: 40px;
+            cursor: pointer;
+            padding-left: 15px;
+        }
+        p{
+            font-size: 18px;
+            padding-left: 10px;
+            cursor: pointer;
+            padding-top: 10px;
+        }
+        button{
+            width: 200px;
+            border-radius: 10px;
+            border-color: transparent;
+            height: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 16px;
+            background-color: #e4b62b;
+            transition-duration: 0.4s;
+            box-shadow: 0 4px 6px rgba(227, 227, 5, 0.1); 
+        }
+        button:hover {
+            background-color: rgba(127, 114, 17, 0.447);
+            color: black;
+            border: 2px solid #ffda0b;
+        }
+        span{
+            display: block;
+            cursor: pointer;
+            color: white;
+            margin-left: 60px;
+        }
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+    a{
+        color: white;
+        margin-left: 100px;
+        text-decoration: none;
+        span{
+            text-decoration: underline;
+            color:#ffda0b;
+        }
+    }
+    .register{
+        background-color: rgba(207, 130, 14, 0.482);
+        max-width: 600px;
+        height: 700px;
+        form{
+            margin: 50px 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    a{
+        color: white;
+        margin-left: 50px;
+        text-decoration: none;
+        span{
+            text-decoration: underline;
+            color:#ffda0b;
+        }
+    }
+    .register{
+        background-color: rgba(207, 130, 14, 0.482);
+        max-width: 600px;
+        h1{
+            text-align: center;
+            color: white;
+            padding-top: 40px;
+            cursor: pointer;
+            text-align: center;
+        }
+        h1:hover{
+            color: rgba(195, 217, 27, 0.879);
+            transition: 1s;
+        }
+        form{
+            margin: 30px 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input{
+                width: 200px;
+                border-radius: 10px;
+                border-color: transparent;
+                height: 40px;
+                cursor: pointer;
+                padding-left: 15px;
+            }
+            p{
+                font-size: 18px;
+                padding-left: 10px;
+                cursor: pointer;
+                padding-top: 10px;
+            }
+            button{
+                width: 200px;
+                border-radius: 10px;
+                border-color: transparent;
+                height: 30px;
+                cursor: pointer;
+                margin-top: 30px;
+                margin-left: 10px;
+                font-size: 16px;
+                background-color: #e4b62b;
+                transition-duration: 0.4s;
+                box-shadow: 0 4px 6px rgba(227, 227, 5, 0.1); 
+            }
+            button:hover {
+                background-color: rgba(127, 114, 17, 0.447);
+                color: black;
+                border: 2px solid #ffda0b;
+            }
+            span{
+                display: block;
+                cursor: pointer;
+                color: white;
+                margin-left: 50px;
+            }
+        }
+    }
+}
