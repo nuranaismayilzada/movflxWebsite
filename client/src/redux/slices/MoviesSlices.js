@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import axios from "axios";
 
 export const getAllData = createAsyncThunk('movies/getAllData',async () => {
-    const response = await axios.get("http://localhost:5050/movies")
+    const response = await axios.get("http://localhost:8080/movies")
     return response.data
   },
 )

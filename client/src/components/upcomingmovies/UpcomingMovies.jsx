@@ -5,7 +5,6 @@ import { MdOutlineWatchLater } from "react-icons/md";
 import { AiFillLike } from "react-icons/ai";
 import { BsCartFill } from "react-icons/bs";
 import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import "./upcoming.scss"
 import { useNavigate } from 'react-router-dom';
 const UpcomingMovies = () => {
@@ -14,6 +13,7 @@ const UpcomingMovies = () => {
   useEffect(() => {
     dispatch(getAllData())
   }, [])
+  let navigate = useNavigate();
  
   return (
     <div className='upcomingSection'>
